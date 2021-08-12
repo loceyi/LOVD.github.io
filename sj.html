@@ -11,7 +11,7 @@
 <link href="css/main.css" rel="stylesheet" />
 </head>
 <body>
-<div class="i_header header">
+<div class="header">
 	<div class="wrap">
 		<div class="logo"><a href="index.html" title="hisense"><img src="images/logo.png"/></a></div>
 		<div class="nav">
@@ -26,39 +26,37 @@
 		<div class="clear"></div>
 	</div>
 </div>
-<div class="banner">
-	<ul class="pic">
-		<li style="background:url(images/b1.jpg) center top no-repeat #f6f5ee;"><a href="#"></a></li>
-		<li style="background:url(images/b1.jpg) center top no-repeat #f6f5ee;"><a href="#"></a></li>
-		<li style="background:url(images/b1.jpg) center top no-repeat #f6f5ee;"><a href="#"></a></li>
-	</ul>
-	<a class="prev" href="javascript:void(0)"></a>
-	<a class="next" href="javascript:void(0)"></a>
-	<ul class="hd">
-		<li></li>
-		<li></li>
-		<li></li>
+<div class="zi_menu fixed">
+	<ul class="wrap">
+		<li><a href="#">概览</a></li>
+		<li><a href="#">设计</a></li>
+		<li><a href="#">功能</a></li>
+		<li><a href="#" class="curr">操作系统</a></li>
+		<li><a href="#">技术规格</a></li>
+		<div class="clear"></div>
 	</ul>
 </div>
-<div class="h30"></div>
-<div class="main">
-	<a href="#" class="btn btn_css3">
-		<p class="pic"><img src="images/bt_p1.jpg"/></p>
-		<h2 class="txt">关于我们</h2>
-	</a>
-	<a href="#" class="btn btn_css3">
-		<p class="pic"><img src="images/bt_p2.jpg"/></p>
-		<h2 class="txt">产品中心</h2>
-	</a>
-	<a href="#" class="btn btn_css3">
-		<p class="pic"><img src="images/bt_p3.jpg"/></p>
-		<h2 class="txt">社区服务</h2>
-	</a>
-	<a href="#" class="btn btn_css3">
-		<p class="pic"><img src="images/bt_p4.jpg"/></p>
-		<h2 class="txt">与我联系</h2>
-	</a>
-	<div class="clear"></div>
+<div class="content">
+	<div class="gn_con2">
+		<p><a href="#" title="hisense"><img src="images/cp.png"/></a></p>
+		<h3  style="color:#fff">Babysense 5</h3>
+		<p class="biaoyu" style="color:#ccc">我们用心，你们安心</p>
+		<div class="h20"></div>
+		<p><a href="#" class="more"  style="color:#aaa">进一步了解贝森婴儿宝  <span>></span></a></p>
+	</div>
+	<div class="gn_con4">
+		<div class="wrap">
+			<div class="h40"></div>
+			<p class="biaoyu">Babysense 5文字描述文字描述文字描述文字描述<br/>
+	Babysense 5文字描述文字描述文字描述文字描述</p>
+			<div class="h20"></div>
+			<p><a href="#" class="more">进一步了解贝森婴儿宝  <span>></span></a></p>
+			<p><a href="#" title="hisense"><img src="images/cp.png" width="80%"/></a></p>
+			<p class="biaoyu">强大的功能给您安心、不一样的贴身体验</p>
+			<div class="h20"></div>
+			<p><a href="#" class="more" style="color:#aaa">进一步了解贝森婴儿宝  <span>></span></a></p>
+		</div>
+	</div>
 </div>
 <div class="h30"></div>
 <div class="h30"></div>
@@ -78,10 +76,16 @@
 </div>
 <!-- The Scripts -->
 <script src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.js"></script> 
-<script src="js/jquery.SuperSlide.2.1.1.js"></script>
-<script type="text/javascript">
-jQuery(".banner").hover(function(){ jQuery(this).find(".prev,.next").stop(true,true).fadeTo("show",0.2) },function(){ jQuery(this).find(".prev,.next").fadeOut() });
-jQuery(".banner").slide({ mainCell:".pic",effect:"fold", autoPlay:true, delayTime:600, trigger:"click"});//banner图
+<script src="js/posfixed.js"></script>
+<script>
+$(function(){
+	$('.fixed').posfixed({
+		distance : 0,
+		pos : 'top',
+		type : 'while',
+		hide : false
+	});
+});
 </script>
 </body>
 </html>
