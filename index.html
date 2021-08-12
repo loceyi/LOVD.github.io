@@ -20,8 +20,12 @@
     
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/smoothscroll.js"></script>
-    
+    <style>
 
+	.img-DJI{
+		opacity: 0.3;
+	}
+    </style>
   </head>
 
   <body data-spy="scroll" data-offset="0" data-target="#navigation">
@@ -35,43 +39,32 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-	          <a class="navbar-brand" href="#"><b>Pratt</b></a>
+	          <a class="navbar-brand" href="#"><b>LOVD</b></a>
 	        </div>
-	        <div class="navbar-collapse collapse">
+
+			  <div class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav">
-	            <li class="active"><a href="#home" class="smothscroll">Home</a></li>
-	            <li><a href="#desc" class="smothscroll">Description</a></li>
-	            <li><a href="#showcase" class="smothScroll">Showcase</a></li>
-	            <li><a href="#contact" class="smothScroll">Contact</a></li>
+	            <li class="active"><a href="index.html" class="smothscroll">Home</a></li>
+	            <li><a href="dataset.html" class="smothscroll">Dataset</a></li>
+	            <li><a href="evaluation.html" class="smothScroll">Evaluation</a></li>
+	            <li><a href="about.html" class="smothScroll">About</a></li>
 	          </ul>
 	        </div><!--/.nav-collapse -->
 	      </div>
 	    </div>
 
 
-	<section id="home" name="home"></section>
-	<div id="headerwrap">
-	    <div class="container">
-	    	<div class="row centered">
+	<section id="home" name="home" ></section>
+	<div id="headerwrap" style="position:center">
+	    <div>
+	    	<div class="row centered" >
 	    		<div class="col-lg-12">
 					<h1><b>LOVD</b></h1>
-					<h3>Large Optical Vecicle Dataset.</h3>
+					<h3>Land Vehicle Detection in Complex Scenes of Optical Remote Sensing Image.</h3>
 					<br>
 	    		</div>
-	    		
-	    		<div class="col-lg-2">
-	    			<h5>Amazing Results</h5>
-	    			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-	    			<img class="hidden-xs hidden-sm hidden-md" src="assets/img/arrow1.png">
-	    		</div>
-	    		<div class="col-lg-8">
-	    			<img class="img-responsive" src="assets/img/DJI_00153.JPG" alt="">
-	    		</div>
-	    		<div class="col-lg-2">
-	    			<br>
-	    			<img class="hidden-xs hidden-sm hidden-md" src="assets/img/arrow2.png">
-	    			<h5>Awesome Design</h5>
-	    			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+	    		<div class="col-lg-12">
+	    			<img class="img-DJI" src="assets/img/DJI_00153.JPG" >
 	    		</div>
 	    	</div>
 	    </div> <!--/ .container -->
@@ -83,30 +76,19 @@
 	<div id="intro">
 		<div class="container">
 			<div class="row centered">
-				<h1>Designed To Excel</h1>
+				<h1><b>Introduction to LOVD</b></h1>
 				<br>
 				<br>
-				<div class="col-lg-4">
-					<img src="assets/img/intro01.png" alt="">
-					<h3>Community</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				</div>
-				<div class="col-lg-4">
-					<img src="assets/img/intro02.png" alt="">
-					<h3>Schedule</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				</div>
-				<div class="col-lg-4">
-					<img src="assets/img/intro03.png" alt="">
-					<h3>Monitoring</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				</div>
+				<h1>LOVD is an abbreviation for 'Land Vehicle Detection in
+					Complex Scenes of Optical Remote Sensing Image'. It is
+					built with over 1000 remote sensing images and tested with
+					state-of-art algorithms.
+				</h1>
 			</div>
 			<br>
 			<hr>
 	    </div> <!--/ .container -->
 	</div><!--/ #introwrap -->
-    <div class="copyrights">Collect from <a href="http://www.mobancss.com/" >免费网站模板</a></div>
 	
 	<!-- FEATURES WRAP -->
 	<div id="features">
@@ -115,9 +97,6 @@
 				<h1 class="centered">What's New?</h1>
 				<br>
 				<br>
-				<div class="col-lg-6 centered">
-					<img class="centered" src="assets/img/mobile.png" alt="">
-				</div>
 				
 				<div class="col-lg-6">
 					<h3>Some Features</h3>
@@ -225,41 +204,15 @@
 			<div class="col-lg-5">
 				<h3>Address</h3>
 				<p>
-				Av. Greenville 987,<br/>
-				New York,<br/>
-				90873<br/>
-				United States
+				HIT,<br/>
+				Harbin,<br/>
+				150001<br/>
+				China
 				</p>
 			</div>
-			
-			<div class="col-lg-7">
-				<h3>Drop Us A Line</h3>
-				<br>
-				<form role="form" action="#" method="post" enctype="plain"> 
-				  <div class="form-group">
-				    <label for="name1">Your Name</label>
-				    <input type="name" name="Name" class="form-control" id="name1" placeholder="Your Name">
-				  </div>
-				  <div class="form-group">
-				    <label for="email1">Email address</label>
-				    <input type="email" name="Mail" class="form-control" id="email1" placeholder="Enter email">
-				  </div>
-				  <div class="form-group">
-				  	<label>Your Text</label>
-				  	<textarea class="form-control" name="Message" rows="3"></textarea>
-				  </div>
-				  <br>
-				  <button type="submit" class="btn btn-large btn-success">SUBMIT</button>
-				</form>
-			</div>
 		</div>
 	</div>
-	<div id="c">
-		<div class="container">
-			<p>More Templates <a href="http://www.mobancss.com/" target="_blank" title="模板在线">模板在线</a> - Collect from <a href="http://www.mobancss.com/" title="网页模板" target="_blank">网页模板</a></p>
-		
-		</div>
-	</div>
+
 
 
     <!-- Bootstrap core JavaScript
