@@ -2,4 +2,4 @@ title: LOVD
 description: Land Vehicle Detection in Complex Scenes of Optical Remote Sensing Image
 show_downloads: true
 google_analytics:
-theme: jekyll-theme-cayman
+theme:
