@@ -68,41 +68,68 @@
 <div id="intro">
     <div class="container">
         <div>
-            <h1><b>Data source and copyright </b></h1>
+            <h3><b>Data source and copyright </b></h3>
             <br>
             <br>
-            <h4> All the LOVD images are collected by our teams with
+            <font size="4"> All the LOVD images are collected by our teams with
                 UAV equipment. They are all in jpg format and RGB images
-            </h4>
-            <h4> All images with annotations files can only be used for academic purpose and cannot be
+            </font>
+            <font size="4"> All images with annotations files can only be used for academic purpose and cannot be
                 applied for any commercial use.
-            </h4>
+            </font>
         </div>
         <div>
-            <h1><b>Classification and annotation characteristic </b></h1>
+            <h3><b>Classification and annotation characteristic </b></h3>
             <br>
             <br>
-            <h4>LOVD contains 13 classes.
-            </h4>
+            <font size="4">LOVD contains 13 types of vehicles: cars, trucks,
+                dump trucks, mixer trucks, trailers, bulldozers,
+                pickup trucks, oil tankers, excavators, buses,
+                school buses, trucks and cranes. Our annotation files are in
+                xml format. The format is demonstrated below:
+            </font>
+            <br>
+            <br>
+          <img src="assets/img/xmlDemo.PNG">
+            <br>
+            <br>
+                <font size="4">As shown in the picture, the filename of xml file corresponds
+            with pictures. The 'size' tag shows the size of related pictures and each
+            'object' tag corresponds to annotation information of a vehicle target.
+            The three-level tag under 'object' is essential information.
+            'type' means the whether the object is annotated with rotated
+            bounding box. 'name' corresponds to the type name of the vehicle target and both
+            Chinese and English name are given in the xml. If you do not need Chinese tag, you
+            can transfer it. 'difficult' means whether it is difficult to annotate it by people.
+            'robndbox' contains the key information of targets' location and orientation. We try to
+            include the information of vehicle direction in our dataset, so we add the direction of vehicle's
+            head by applying a 'red_point' method. The 'red_point' coordinate is the corresponding point on
+            the front left of the car. Each point is in format(x,y), and we annotate the
+            vehicle in a clockwise order. 'angle' is just a supplementary information whose range is in
+            (0,2*pi). You can also calculate the angle by four coordinates. We take the horizontal to the right
+            as the initial benchmark, and calculate the angle counterclockwise.
+                </font>
+
         </div>
         <div>
-            <h1><b>Image Info </b></h1>
-            <br>
-            <br>
-            <h4>The image contains the time, pixel, attitude
-            </h4>
+            <h3><b>Image Info </b></h3>
+            <font size="4">The image contains the pixel resolution, timestamp, camera
+                information and GPS info. For privacy safety, we only keep resolution
+                info in the public version. If you need more info, please contact us.
+            </font>
         </div>
         <div>
-            <h1><b>Data Download </b></h1>
-            <br>
-            <br>
+            <h3><b>Data Download </b></h3>
+
             <h3>LOVD-V1.0:
-                <h4>
-                    Baidu Drive:
-                </h4>
-                <h4>
+                <br>
+                <font size="4">
+                    Baidu Drive:  <a href="https://pan.baidu.com/s/1yHvNdlqdl2YO9--e__4GhA">Downloads</a>,  extraction code:ve4i
+                </font>
+                <br>
+                <font size="4">
                     Google drive: <a href="https://drive.google.com/file/d/1NJWytCUk7FGAqL3qUbAE2P-fHmpVnxMK/view?usp=sharing">Downloads</a>
-                </h4>
+                </font>
 
             </h3>
         </div>
